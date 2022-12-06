@@ -7,10 +7,35 @@
 }
 
 .wrapper {
-    width: max-content;
-    margin: auto;
-    margin-top: 25px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+  width: max-content;
+  margin: auto;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.error {
+  display: none;
+}
+
+.error.active {
+  display: block;
+  color: red;
+}
+
+#book-list div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
