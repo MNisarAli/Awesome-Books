@@ -29,7 +29,7 @@
 - [📝 License](#license)
 
 
-# 📖 Green Legacy Initiative Capaign <a name="about-project"></a>
+# 📖 Awesome Books: Plain JavaScript with Objects <a name="about-project"></a>
 
 > This awesome books page built using plain JavaScript with objects. The aim of this project is to master javascript object and DOM manipulation. 
 
@@ -43,16 +43,17 @@
 
 ### Key Features <a name="key-features"></a>
 
-> The key features of this website are include.
+> The key features of this website include.
 
 > - **Interactive**
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-To get a local copy up and running, follow these steps.
+> To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
@@ -70,6 +71,7 @@ Clone this repository to your desired folder:
 ### Usage
 
 This project can be used to practice javascript object
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 👥 Authors <a name="authors"></a>
@@ -87,21 +89,26 @@ This project can be used to practice javascript object
 - GitHub: [@githubhandle](https://github.com/cherelemma)
 - Twitter: [@twitterhandle](https://twitter.com/Chere21271613)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/chere-lemma27211613/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Microverse-Fullstack-Program/HTML-Capstone-GreenLegacy/issues).
+Feel free to check the [issues page](https://github.com/MNisarAli/Awesome-Books/issues).
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## ⭐️ Show your support <a name="support"></a>
 
 Give a ⭐️ if you like this project!
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+> I would like to thank [Microverseinc](https://github.com/microverseinc) for.
 
 * [Readme-template](https://github.com/microverseinc/readme-template)
 * [Linter for HTML and CSS ](https://github.com/microverseinc/linters-config)
@@ -110,6 +117,6 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://choosealicense.com/licenses/mit/) licensed.
+This project is [MIT](./LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
