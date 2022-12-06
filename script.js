@@ -19,4 +19,18 @@ addBtn.addEventListener('click', (event) => {
   localStorage.setItem('books', JSON.stringify(books));
   bookTitle.value = '';
   bookAuthor.value = '';
+  displayBooks(title, author, id);
 });
+
+const displayBooks = (title, author, id) => {
+  const newBook = document.createElement('div');
+  newBook.id = id;
+  newBook.innerHTML = `
+    <p>${title}</p>
+    <p>${author}</p>
+    <button ${id}">Remove</button>
+    <hr>
+  `;
+  const booksList = document.querySelector('#book-list');
+  booksList.appendChild(newBook);
+}
