@@ -7,16 +7,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Project | Awesome Books</title>
   <link rel="stylesheet" href="./style.css">
+  <link href='https://fonts.googleapis.com/css?family=Balsamiq Sans' rel='stylesheet'>
 </head>
 
 <body>
   <main class="wrapper">
-    <section id="books">
-      <h1>Awesome Books</h1>
-      <article id="book-list">
+    
+    <!-- Books Display Section -->
+    <section class="books" id="books">
+      <h1>All Awesome Books</h1>
+      <article class="book-list" id="book-list">
       </article>
+      <hr>
     </section>
+
+    <!-- Form Controls To Add New Books-->
     <section id="input-form">
+      <h2>Add a new book</h2>
       <form>
         <input type="text" id="book-title" name="Title" placeholder="Title" required>
         <input type="text" id="book-author" name="Author" placeholder="Author" required>
@@ -25,6 +32,7 @@
       </form>
     </section>
   </main>
+
   <!-- JavaScript -->
   <script src="./script.js"></script>
 </body>
