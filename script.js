@@ -2,7 +2,6 @@ const bookTitle = document.querySelector('#book-title');
 const bookAuthor = document.querySelector('#book-author');
 const addBtn = document.querySelector('#add-book');
 const errorMsg = document.querySelector('.error');
-
 class Book {
   constructor(title, author, id) {
     this.title = title;
@@ -52,7 +51,6 @@ class Book {
     });
   };
 }
-
 // Add A New Book.
 addBtn.addEventListener('click', (event) => {
   event.preventDefault();
@@ -79,9 +77,41 @@ addBtn.addEventListener('click', (event) => {
     addNewBook.displayBooks(title, author, id);
   }
 });
-
-// On Page Load, Display Books From Local Storage.
+// Script For Single Page Appliction
+const navBtn = document.querySelectorAll('.nav-bar a');
+const section = document.querySelectorAll('section');
+navBtn[0].addEventListener('click', () => {
+  section[0].style.display = 'flex';
+  section[1].style.display = 'none';
+  section[2].style.display = 'none';
+  navBtn[0].classList.add('green');
+  navBtn[1].classList.remove('green');
+  navBtn[2].classList.remove('green');
+});
+navBtn[1].addEventListener('click', () => {
+  section[0].style.display = 'none';
+  section[1].style.display = 'flex';
+  section[2].style.display = 'none';
+  navBtn[0].classList.remove('green');
+  navBtn[1].classList.add('green');
+  navBtn[2].classList.remove('green');
+});
+navBtn[2].addEventListener('click', () => {
+  section[0].style.display = 'none';
+  section[1].style.display = 'none';
+  section[2].style.display = 'flex';
+  navBtn[0].classList.remove('green');
+  navBtn[1].classList.remove('green');
+  navBtn[2].classList.add('green');
+});
+// Date & Time Display Function
+const refreshTime = () => {
+  const timeDisplay = document.getElementById('date');
+  timeDisplay.textContent = new Date();
+  setInterval(refreshTime, 1000);
+};
 window.addEventListener('DOMContentLoaded', () => {
+  // On Page Load, Display Books From Local Storage.
   const books = JSON.parse(localStorage.getItem('books'));
   if (books) {
     books.forEach((book) => {
@@ -89,4 +119,9 @@ window.addEventListener('DOMContentLoaded', () => {
       theBook.displayBooks();
     });
   }
+  // ON Page lodd, Hide Sections
+  section[1].style.display = 'none';
+  section[2].style.display = 'none';
+  // On Page Load, Display Date & Time
+  refreshTime();
 });
