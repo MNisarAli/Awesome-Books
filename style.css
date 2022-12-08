@@ -10,25 +10,19 @@
 }
 
 .wrapper {
-  width: max-content;
   margin: auto;
-  margin-top: 25px;
   display: flex;
   flex-direction: column;
   gap: 15px;
-}
-
-h1 {
-  width: max-content;
-  margin: auto;
-  margin-bottom: 15px;
+  padding-top: 2.5rem;
 }
 
 form {
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  width: max-content;
+  gap: 1.5rem;
+  width: 25rem;
+  max-width: 99%;
   margin: auto;
   margin-top: 1rem;
 }
@@ -43,7 +37,7 @@ form {
 }
 
 .book-list {
-  width: 80vw;
+  width: 99%;
   border: 2px #000 solid;
   gap: 15px;
 }
@@ -52,7 +46,7 @@ form {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0.3vw;
+  padding: 3px;
 }
 
 #book-list .book-wrapper:nth-child(odd) {
@@ -71,18 +65,26 @@ button,
   box-shadow: 3px 3px black;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 #add-book {
-  max-width: 4rem;
+  padding: 0.15rem 1rem;
   align-self: flex-end;
 }
 
 #input-form {
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  padding: 1rem;
+  gap: 1.2rem;
 }
 
 input {
   border: 2px #000 solid;
-  padding: 2px 5px;
+  padding: 5px;
 }
 
 ::placeholder {
@@ -101,4 +103,78 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 1rem;
+  gap: 1.2rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid #000;
+  background-color: #fff;
+  padding: 0.4rem 1rem;
+  position: fixed;
+  width: 100%;
+}
+
+h1 {
+  font-size: 1.2rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.nav-bar a {
+  color: black;
+  text-decoration: none;
+  border-right: 2px solid black;
+  padding-right: 0.6rem;
+}
+
+.nav-bar a:nth-last-child(1) {
+  border-right: none;
+  padding-right: 0;
+}
+
+.nav-bar a:hover {
+  color: #00f;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+a.green {
+  color: #008000;
+}
+
+#date {
+  align-self: flex-end;
+  padding: 0.4rem 1rem;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.2rem;
+  gap: 2rem;
+}
+
+#contact ul {
+  max-width: 90%;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  border: 2px solid black;
+  background-color: #fff;
+  padding: 0.5rem 1rem;
+  width: 100%;
 }
