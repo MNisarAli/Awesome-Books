@@ -107,7 +107,10 @@ navBtn[2].addEventListener('click', () => {
 // Date & Time Display Function
 const refreshTime = () => {
   const timeDisplay = document.getElementById('date');
-  timeDisplay.textContent = new Date();
+  const currentDate = new Date();
+  const options = {year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric',  minute: 'numeric',  second: 'numeric'};
+  const dateString = currentDate.toLocaleString('en-US', options)
+  timeDisplay.textContent = dateString;
   setInterval(refreshTime, 1000);
 };
 window.addEventListener('DOMContentLoaded', () => {
