@@ -4,6 +4,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Balsamiq Sans', sans-serif;
+  font-weight: 600;
+  font-style: normal;
 }
 
 .wrapper {
@@ -16,13 +19,18 @@
 }
 
 h1 {
-  margin-bottom: 10px;
+  width: max-content;
+  margin: auto;
+  margin-bottom: 15px;
 }
 
 form {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  width: max-content;
+  margin: auto;
+  margin-top: 1rem;
 }
 
 .error {
@@ -34,8 +42,63 @@ form {
   color: red;
 }
 
+.book-list {
+  width: 80vw;
+  border: 2px #000 solid;
+  gap: 15px;
+}
+
 #book-list div {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.3vw;
+}
+
+#book-list .book-wrapper:nth-child(odd) {
+  background: rgb(194, 187, 187);
+}
+
+.book-info {
+  display: flex;
+  gap: 5px;
+}
+
+button,
+.remove-btn {
+  padding: 0 5px;
+  border: 2px solid;
+  box-shadow: 3px 3px black;
+}
+
+#add-book {
+  max-width: 4rem;
+  align-self: flex-end;
+}
+
+#input-form {
+  text-align: center;
+}
+
+input {
+  border: 2px #000 solid;
+  padding: 2px 5px;
+}
+
+::placeholder {
+  color: #000;
+}
+
+hr {
+  margin-top: 1.5rem;
+  width: 7rem;
+  background-color: #000;
+  border: 1.5px solid #000;
+  border-radius: 50%;
+}
+
+.books {
+  display: flex;
   flex-direction: column;
-  gap: 10px;
+  align-items: center;
 }
